@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{37D94B0F-2A16-44D0-B14E-7AC25A20BA89}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>project</RootNamespace>
+    <AssemblyName>project</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminmenu.Designer.cs">
+      <DependentUpon>adminmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="authorization.Designer.cs">
+      <DependentUpon>authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="avtoreg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="avtoreg.Designer.cs">
+      <DependentUpon>avtoreg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="balls.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="balls.Designer.cs">
+      <DependentUpon>balls.cs</DependentUpon>
+    </Compile>
+    <Compile Include="korzina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="korzina.Designer.cs">
+      <DependentUpon>korzina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mugs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mugs.Designer.cs">
+      <DependentUpon>mugs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prof.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sweathirts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sweathirts.Designer.cs">
+      <DependentUpon>sweathirts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tshirts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tshirts.Designer.cs">
+      <DependentUpon>tshirts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="redkatalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="redkatalog.Designer.cs">
+      <DependentUpon>redkatalog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stuff.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stuff.Designer.cs">
+      <DependentUpon>stuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="katalogcontol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="katalogcontol.Designer.cs">
+      <DependentUpon>katalogcontol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainMenu.Designer.cs">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="registration.Designer.cs">
+      <DependentUpon>registration.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminmenu.resx">
+      <DependentUpon>adminmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="authorization.resx">
+      <DependentUpon>authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="avtoreg.resx">
+      <DependentUpon>avtoreg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="balls.resx">
+      <DependentUpon>balls.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="korzina.resx">
+      <DependentUpon>korzina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mugs.resx">
+      <DependentUpon>mugs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sweathirts.resx">
+      <DependentUpon>sweathirts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tshirts.resx">
+      <DependentUpon>tshirts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="redkatalog.resx">
+      <DependentUpon>redkatalog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stuff.resx">
+      <DependentUpon>stuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="katalogcontol.resx">
+      <DependentUpon>katalogcontol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainMenu.resx">
+      <DependentUpon>mainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="registration.resx">
+      <DependentUpon>registration.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="db_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>db.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\music.wav" />
+    <None Include="Resources\coin2.png" />
+    <None Include="Resources\coin.png" />
+    <None Include="Resources\admin2.png" />
+    <None Include="Resources\admin1.png" />
+    <None Include="Resources\admin.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\lock.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\hello1.png" />
+    <None Include="Resources\hello.png" />
+    <None Include="Resources\img\m\m.jpg" />
+    <None Include="Resources\img\m\m %283%29.jpg" />
+    <None Include="Resources\img\m\m %282%29.jpg" />
+    <None Include="Resources\img\m\m %281%29.jpg" />
+    <None Include="Resources\img\m\m %289%29.jpg" />
+    <None Include="Resources\img\m\m %288%29.jpg" />
+    <None Include="Resources\img\m\m %287%29.jpg" />
+    <None Include="Resources\img\m\m %286%29.jpg" />
+    <None Include="Resources\img\m\m %285%29.jpg" />
+    <None Include="Resources\img\m\m %284%29.jpg" />
+    <None Include="Resources\Футболка.png" />
+    <None Include="Resources\Кружка.png" />
+    <None Include="Resources\Кофта.png" />
+    <None Include="Resources\kryjka.png" />
+    <None Include="Resources\kofta.png" />
+    <None Include="Resources\foot.png" />
+    <None Include="Resources\img_546971.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
